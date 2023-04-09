@@ -1,3 +1,20 @@
+Backend - Bloodbank API
+Develop a NestJS  REST API server with the following specs
+The app  handles 2 types of users - Hospital, Receiver
+Hospital and Receiver can create an account and sign in
+The hospital can add all the blood samples info available
+Receivers are able to request blood samples from hospitals. 
+The hospital can  see the list of all receivers who have requested a particular blood group from its blood bank.
+Endpoints:
+GET endpoint to get the list of all blood samples available in all hospitals (Public - Everyone can access)
+POST endpoint to add the blood sample info (Only accessible to respective hospital)
+PUT endpoint to update the respective blood info (Only accessible to respective hospital)
+DELETE endpoint to delete the respective blood info (Only accessible to respective hospital)
+GET endpoint to get all the blood info that the hospital uploaded (Only accessible to respective hospital)
+POST Endpoint to request a blood sample (Only accessible to receiver)
+GET endpoint to get the list of all receivers who have requested a particular blood group from its blood bank (Only accessible to respective hospital)
+Tech Stack - Typescript, NestJS, MongoDB
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
